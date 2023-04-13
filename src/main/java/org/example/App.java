@@ -17,5 +17,6 @@ public class App
         System.out.println("this commit is after adding FILEB");
         System.out.println("this commit is after adding FILEA");
         System.out.println("release-2 after adding FILEC");
+        System.out.println("release-2 some dummy commit");
     }
 }

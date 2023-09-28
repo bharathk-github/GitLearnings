@@ -6,6 +6,12 @@ jobs:
     environment: DEV
     name: A job to deploy UCD application
     steps:
+      - name: Checkout repo
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            deployment.properties
+          sparse-checkout-cone-mode: false
       - name: Deploy UCD application
         id: Deploy_MYAPP
         uses: bharathk-github/UrbanCodeDeployAction@vtest-1.23
